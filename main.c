@@ -44,7 +44,7 @@ void p1() //player1
     pattern(num);
      if(win1(num)==1)
        printf(" \nplayer1 wins!!!");
-       else if( count==8)
+       else if( count==3)
        {
            printf(" \n it's a tie");//////
        }
@@ -61,7 +61,7 @@ int win1(char a[]) //win condition
     int i;
     count++;
     //rows
-     for(i=0;i<=6;i+=2)
+     for(i=0;i<=6;i+=3)
     {
         if( a[i]==a[i+1] && a[i]==a[i+2] && a[i+1]==a[i+2])
         {
