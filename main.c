@@ -37,7 +37,7 @@ void p1() //player1
   int index,i,loc;
   printf("turn of player1 ");
   scanf("%d",&loc);//c4
-  index=loc+1;//c2
+  index=loc-1;//c2
   if(turn[index]==0){
   turn[index]=1;
   num[index]='x';
